@@ -1,0 +1,15 @@
+@import "utilities.css";
+
+:root{
+    --main-gradient: linear-gradient(130deg, rgba(255, 229, 0, 0.7) -20%, rgba(255, 0, 0, 0.56) 120%);
+}
+
+body{
+    margin: 0
+}
+
+/* Tous les textes */
+h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, label, textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
