@@ -1,0 +1,46 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  background-image: var(--main-gradient);
+}
+
+.presentation-content {
+  margin-right: 18rem;
+}
+
+.quote {
+  position: relative;
+  width: 50%;
+  padding: 10px 30px;
+  margin: 40px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../assets/images/quote-right-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-image: url("../assets/images/quote-left-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
