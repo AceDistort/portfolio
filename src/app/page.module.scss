@@ -1,0 +1,25 @@
+.presentationSection {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & p, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 5rem;
+
+  & p, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
+
