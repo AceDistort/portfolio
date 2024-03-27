@@ -6,12 +6,16 @@ on:
 
 jobs:
   build:
+    environment: recette
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
+
+      - name: Copy github environment variable to .env file
+        run: echo "${{ vars.ENV_FILE }}" >> .env
 
       - name: Build Docker image
         uses: docker/build-push-action@v2
